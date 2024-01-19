@@ -1,0 +1,13 @@
+@keyframes show-thankPage {
+    to{
+        background-color: rgba(19, 21, 28, 0.65);
+        backdrop-filter: blur(5px);
+    }
+}
+
+
+@keyframes show-message-thankPage {
+    to{
+        margin-left: 0;
+    }
+}

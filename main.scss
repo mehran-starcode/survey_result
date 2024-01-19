@@ -1,0 +1,345 @@
+@import "KeyFrames";
+
+
+@font-face {
+    font-family: 'Behdad';
+    src:url('//cdn.font-store.ir/fonts/behdad/Behdad-Regular.woff2') format('woff2'),
+    url('//cdn.font-store.ir/fonts/behdad/Behdad-Regular.woff') format('woff'),
+    url('//cdn.font-store.ir/fonts/behdad/Behdad-Regular.ttf') format('truetype'),
+	url('//cdn.font-store.ir/fonts/behdad/Behdad-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Vina+Sans&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Vina Sans', sans-serif;
+*/
+
+
+//----------------------------------  Fonts  ----------------------------------
+$font-dancingScript : "Dancing Script", cursive;
+$font-josefinSans : "josefin Sans", sans-serif;
+$font-nunito : "Nunito", sans-serif;
+$font-Behdad : "Behdad";
+
+
+
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    width: 100vw;
+    background-color: #282828;
+    color: bisque;
+    font-size: 4.6vw;
+    
+    
+    .main-page{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        
+        
+        
+        .thank-page{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            
+
+            
+            
+            
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                margin-left: 180vw;
+                
+                
+                span{
+                    font-size: 5vh;
+                }
+            
+            }
+            
+            img{
+                overflow: hidden;
+                width: 30vw;
+                height: 30vw;
+                margin-bottom: 40dvh;
+                margin-left: 180vw;
+                border-radius: 100%;
+                
+            }
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: bisque .2vw solid;
+            border-radius: 3vw;
+            padding: .5vh 0 0 0;
+            width: 30%;
+        }
+    
+        input{
+            text-align: center;
+            width: 60%;
+            height: 6dvh;
+            margin-bottom: 2vh;
+            font-size: 4.6vw;
+            font-weight: bold;
+            padding: .5vh 0 0 0;
+            background-color: bisque;
+            border-radius: 3vw;
+            border: none;
+            
+            &:focus{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+        
+        
+        textarea{
+            padding: 1vh 1.5vh;
+            font-size: 4.6vw;
+            width: 100%;
+            height: 20dvh;
+            background-color: bisque;
+            border-radius: 3vw;
+            
+            &:focus{
+                background-color: #fff8ef;
+            }
+            
+        }
+        
+        .submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .5vh 0 0 0;
+            width: 95%;
+            height: 9dvh;
+            border-radius: 3vh;
+            background-color: green;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            font-size: 2.4vh;
+            font-weight: bold;
+            color: bisque;
+            
+            &:active{
+                background-color: #048a04;
+                box-shadow: 0 0 2px 5px #1e1e1e;
+            }
+        }
+        
+        >h1{
+            margin-top: 1dvh;
+            text-shadow: 6px 6px 5px #181818;
+            font-size: 9.5vw;
+        }
+        
+        
+        .cont-question {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: .8vh;
+            padding: 2vh 5vw;
+            width: 95%;
+            border-radius: 20px;
+            background-color: #171717;
+            box-shadow: 2px 2px 5px black;
+            
+            
+            .question {
+                width: 100%;
+                margin-bottom: 2vh;
+            }
+            
+            .answer {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+            
+            
+            section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 1vh;
+                padding: 2vh 4vw;
+                width: 105%;
+                border-radius: 20px;
+                background-color: rgba(65, 65, 65, 0.38);
+                box-shadow: 2px 2px 2px black;
+                
+                .question {
+                    margin-bottom: 2vh;
+                }
+                
+                .answer {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                
+                
+            }
+            
+            
+        }
+        
+        .cont-question-8 {
+            .btn {
+                width: 45%;
+            }
+            
+        }
+        
+        .cont-question-9 {
+            .answer{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .btn {
+                    margin-top: 1vh;
+                    width: 45%;
+                }
+            }
+        }
+        
+        .cont-question-10 {
+            .answer{
+                display: flex;
+                flex-direction: column;
+                
+                .top{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .btn {
+                        margin-top: 1vh;
+                        width: 45%;
+                    }
+                }
+                
+                .bottom{
+                    display: flex;
+                    justify-content: center;
+                    .btn {
+                        margin-top: 1vh;
+                        width: 95%;
+                    }
+                }
+                
+            }
+        }
+        
+        .cont-question-11 {
+            .answer{
+                display: flex;
+                flex-direction: column;
+                
+                .top{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .btn {
+                        margin-top: 1vh;
+                        width: 31%;
+                    }
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: center;
+                    .btn {
+                        margin-top: 1vh;
+                        width: 98%;
+                    }
+                }
+
+            }
+        }
+        
+        .cont-question-15 {
+            .answer{
+                display: flex;
+                flex-direction: column;
+                
+                .top{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .btn {
+                        margin-top: 1vh;
+                        width: 45%;
+                    }
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    .btn {
+                        margin-top: 1vh;
+                        width: 98%;
+                    }
+                }
+
+            }
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+.click{
+    background-color: bisque;
+    color: #282828;
+}
+
+
+
+
