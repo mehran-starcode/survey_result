@@ -28,6 +28,9 @@ const btns_q16_12 = document.querySelectorAll('.cont-question-16 .issue-12 .btn'
 const textarea_q16_other = document.querySelector('.cont-question-16 .issue-other textarea');
 const textarea_q17 = document.querySelector('.cont-question-17 textarea');
 
+const allBtnsMainPage = document.querySelectorAll('div.main-page  .btn')
+const allInputMainPage = document.querySelectorAll('div.main-page  input')
+const allTextAreaMainPage = document.querySelectorAll('div.main-page  textarea')
 
 const body_EL = document.querySelector('body')
 const mainPage_EL = document.querySelector('body .main-page');
@@ -47,6 +50,6 @@ export {
     btns_q16_1,btns_q16_2,btns_q16_3,btns_q16_4,btns_q16_5,btns_q16_6,
     btns_q16_7,btns_q16_8,btns_q16_9,btns_q16_10,btns_q16_11,btns_q16_12,textarea_q16_other,textarea_q17,
 
-    mainPage_EL,resultCont_EL,body_EL
+    mainPage_EL,resultCont_EL,body_EL,allBtnsMainPage,allInputMainPage,allTextAreaMainPage
 
 }
