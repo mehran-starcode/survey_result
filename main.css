@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Vina+Sans&display=swap");
-@keyframes show-thankPage {
+@keyframes showMainPage {
   to {
-    background-color: rgba(19, 21, 28, 0.65);
-    backdrop-filter: blur(5px);
+    margin: 0;
   }
 }
-@keyframes show-message-thankPage {
+@keyframes hideMainPage {
+  from {
+    margin: 0;
+  }
   to {
-    margin-left: 0;
+    margin-right: -280vw;
+  }
+}
+@keyframes showBackBtn {
+  to {
+    opacity: 1;
   }
 }
 @font-face {
@@ -73,6 +80,19 @@ body .resultCont .survey .specs .key {
   color: #131313;
   font-weight: bold;
 }
+body .resultCont .survey .specs .value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+  color: bisque;
+  font-weight: bold;
+}
+body .resultCont .survey .dateTime {
+  height: 23%;
+}
 body .main-page {
   position: absolute;
   display: flex;
@@ -80,8 +100,8 @@ body .main-page {
   align-items: center;
   flex-shrink: 0;
   width: 100%;
-  background-color: red;
-  margin-right: -250vw;
+  background-color: #282828;
+  margin-right: -280vw;
   z-index: 0;
 }
 body .main-page .btn {
@@ -137,6 +157,37 @@ body .main-page .submit {
 body .main-page .submit:active {
   background-color: #048a04;
   box-shadow: 0 0 2px 5px #1e1e1e;
+}
+body .main-page .backBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 5vw;
+  top: 2vh;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 10px;
+  background-color: rgba(58, 58, 58, 0.27);
+  backdrop-filter: blur(2px);
+  border: bisque solid 2px;
+  opacity: 0;
+}
+body .main-page .backBtn .firstPip {
+  position: absolute;
+  width: 6%;
+  height: 80%;
+  background-color: bisque;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+body .main-page .backBtn .secondPip {
+  position: absolute;
+  width: 6%;
+  height: 80%;
+  background-color: bisque;
+  border-radius: 10px;
+  transform: rotate(-45deg);
 }
 body .main-page > h1 {
   margin-top: 1dvh;
