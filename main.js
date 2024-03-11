@@ -10,8 +10,20 @@ let dataBase = null
 let touchType = 'immobile'
 
 
+
 window.addEventListener('load', getData)
 
+
+Variables.allInputMainPage.forEach(item => {
+    item.addEventListener('touchend', event => {
+        event.preventDefault()
+    })
+})
+Variables.allTextAreaMainPage.forEach(item => {
+    item.addEventListener('touchend', event => {
+        event.preventDefault()
+    })
+})
 
 
 async function getData(){
