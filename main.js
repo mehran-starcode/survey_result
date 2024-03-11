@@ -16,10 +16,13 @@ window.addEventListener('load', getData)
 
 async function getData(){
 
-    await fetch('https://test-a7f0a-default-rtdb.firebaseio.com/survey_result.json')
+    await fetch('https://survey-95a6a-default-rtdb.asia-southeast1.firebasedatabase.app/survey_result.json')
         .then(res => res.json())
         .then(data => dataBase = data)
-        .catch(err => console.log(err))
+        .catch(err => console.log(`
+            Custom Error => (fetch Data from DataBase)
+            Error => ${err}
+        `))
 
 
     for (const key in dataBase) {
